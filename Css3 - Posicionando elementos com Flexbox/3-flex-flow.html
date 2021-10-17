@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex-container {
+      width: 300px;
+      border: 1px solid #000;
+      display: flex;
+      margin: 10px;
+    }
+
+    .item {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      background-color: blue;
+    }
+
+    .row-nowrap {
+      flex-flow: row nowrap;
+    }
+
+    .row-wrap {
+      flex-flow: row wrap;
+    }
+
+    .rowReverse-wrap {
+      flex-flow: row-reverse wrap;
+    }
+
+    .rowReverse-wrapReverse {
+      flex-flow: row-reverse wrap-reverse;
+    }
+  </style>
+  <title>Fundamentos - Flex flow</title>
+</head>
+
+<body>
+  <h1>row nowrap</h1>
+  <div class="flex-container row-nowrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+
+  <h1>row wrap</h1>
+  <div class="flex-container row-wrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+  <h1>row-reverse wrap</h1>
+  <div class="flex-container rowReverse-wrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+  <h1>row-reverse wrap-reverse</h1>
+  <div class="flex-container rowReverse-wrapReverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+</body>
+
+</html>
