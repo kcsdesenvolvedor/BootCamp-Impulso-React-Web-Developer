@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex-container {
+      max-width: 400px;
+      border: 2px solid #000;
+      display: flex;
+      margin: 5px;
+    }
+
+    .item {
+      font-size: 24px;
+      background-color: blueviolet;
+      text-align: center;
+      color: #fff;
+      margin: 5px;
+    }
+
+    .s-0 {
+      flex-shrink: 0;
+      flex-basis: 100px;
+    }
+
+    .s-1 {
+      flex-shrink: 1;
+      flex-basis: 2;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+
+    .fg-2 {
+      flex-grow: 2;
+    }
+  </style>
+  <title>Fundamentos - Flex shrink</title>
+</head>
+
+<body>
+  <p>flex shrink 1</p>
+  <div class="flex-container">
+    <div class="item s-1 fg-1">AAAA</div>
+    <div class="item s-1 fg-1">B</div>
+    <div class="item s-1 fg-1">C</div>
+    <div class="item s-1 fg-1">D</div>
+  </div>
+
+  <div class="flex-container">
+    <div class="item s-1 fg-1">AAAA</div>
+    <div class="item s-1 fg-1">Texto de exemplo flex shrink</div>
+    <div class="item s-1 fg-1">C</div>
+    <div class="item s-1 fg-1">D</div>
+  </div>
+
+  <p>flex shrink 0 / basis 100px</p>
+  <div class="flex-container">
+    <div class="item s-0 fg-1">AAAA</div>
+    <div class="item s-0 fg-1">BBB</div>
+    <div class="item s-0 fg-1">C</div>
+    <div class="item s-0 fg-1">D</div>
+  </div>
+
+  <p>flex shrink mix / basis 100px</p>
+  <div class="flex-container">
+    <div class="item s-0 fg-1">AAAA</div>
+    <div class="item s-1 fg-1">BBB</div>
+    <div class="item s-2 fg-1">C Texto de exemplo</div>
+    <div class="item s-0 fg-1">D</div>
+  </div>
+</body>
+
+</html>
