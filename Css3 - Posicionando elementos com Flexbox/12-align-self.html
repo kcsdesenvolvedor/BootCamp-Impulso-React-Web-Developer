@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex-container {
+      border: 2px solid #000;
+      display: flex;
+      margin: 10px;
+      max-width: 400px;
+    }
+
+    .item {
+      background-color: orangered;
+      color: #fff;
+      font-size: 24px;
+      flex: 1;
+      margin: 5px;
+      text-align: center;
+    }
+
+    .direction {
+      align-items: center;
+    }
+
+    .start {
+      align-self: flex-start;
+    }
+
+    .center {
+      align-self: center;
+    }
+
+    .end {
+      align-self: flex-end;
+    }
+
+    .stretch {
+      align-self: stretch;
+    }
+
+    .baseline {
+      align-self: baseline;
+    }
+
+    .auto {
+      align-self: auto;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+  </style>
+  <title>Fundamentos - Align self</title>
+</head>
+
+<body>
+  <h1>Row</h1>
+  <section class="flex-container direction">
+    <div class="item auto">AAA</div>
+    <div class="item auto">Texto teste para implementação de codigo</div>
+    <div class="item auto">CCCC</div>
+    <div class="item auto">DDD</div>
+  </section>
+
+  <section class="flex-container direction">
+    <div class="item center">AAA</div>
+    <div class="item stretch">Texto teste para implementação de codigo</div>
+    <div class="item start">CCCC</div>
+    <div class="item end">DDD</div>
+  </section>
+
+  <section class="flex-container direction">
+    <div class="item center">AAA</div>
+    <div class="item stretch">Texto teste para implementação de codigo</div>
+    <div class="item start">CCCC</div>
+    <div class="item end">DDD</div>
+  </section>
+
+  <h1>Column</h1>
+  <section class="flex-container direction column">
+    <div class="item auto">AAA</div>
+    <div class="item auto">Texto teste para implementação de codigo</div>
+    <div class="item auto">CCCC</div>
+    <div class="item auto">DDD</div>
+  </section>
+
+  <section class="flex-container direction column">
+    <div class="item center">AAA</div>
+    <div class="item stretch">Texto teste para implementação de codigo</div>
+    <div class="item start">CCCC</div>
+    <div class="item end">DDD</div>
+  </section>
+
+  <section class="flex-container direction column">
+    <div class="item center">AAA</div>
+    <div class="item stretch">Texto teste para implementação de codigo</div>
+    <div class="item start">CCCC</div>
+    <div class="item end">DDD</div>
+  </section>
+</body>
+
+</html>
