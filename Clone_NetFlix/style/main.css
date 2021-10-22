@@ -44,13 +44,15 @@ header nav a:hover {
 
 .filme-principal {
   font-size: 16px;
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/plano_de_fundo.jpg) no-repeat fixed center /20%;
-  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/plano_de_fundo2.jpg) no-repeat fixed center /10%;
+  height: 600px;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .filme-principal .descricao {

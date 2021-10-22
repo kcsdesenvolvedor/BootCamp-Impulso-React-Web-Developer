@@ -1,0 +1,64 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+body {
+  background-color: var(--preta);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+  height: 0;
+  margin: 0 auto;
+}
+
+.container .iframe-item {
+  display: flex;
+  justify-content: center;
+}
+
+.container iframe {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  margin-top: 3%;
+}
+
+.container .botao-voltar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+}
+
+.container .botao-voltar a {
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  line-height: 1.7;
+  font-size: 18px;
+  transition: .4s ease all;
+}
+
+.container .botao-voltar a:hover {
+  background-color: var(--vermelho);
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .container iframe {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+  }
+}

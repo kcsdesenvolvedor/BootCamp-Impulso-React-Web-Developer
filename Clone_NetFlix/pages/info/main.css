@@ -32,6 +32,7 @@ body {
 
 .container .informacao .info-restricao {
   display: flex;
+  align-items: center;
 }
 
 .container .informacao .info-restricao #restricao-idade {
@@ -39,4 +40,26 @@ body {
   margin-right: 4px;
   padding-right: 2px;
   padding-top: 2px;
+}
+
+.container .informacao .botao-voltar {
+  display: flex;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.container .informacao .botao-voltar a {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  line-height: 1.7;
+  font-size: 18px;
+  transition: .4s ease all;
+}
+
+.container .informacao .botao-voltar a:hover {
+  background-color: var(--vermelho);
+  color: #fff;
 }

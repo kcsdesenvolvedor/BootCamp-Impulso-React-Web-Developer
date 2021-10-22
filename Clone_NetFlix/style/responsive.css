@@ -7,6 +7,18 @@
     margin-top: 5px;
     width: 300px;
   }
+  .filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/plano_de_fundo3.jpg) no-repeat fixed center /10%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
