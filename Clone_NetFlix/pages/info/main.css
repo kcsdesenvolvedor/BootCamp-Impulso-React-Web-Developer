@@ -1,0 +1,42 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+body {
+  background: var(--preta);
+  color: #fff;
+  font-family: 'Arial', Times, serif;
+}
+
+.container {
+  display: flex;
+}
+
+.container .fundo-img {
+  margin-right: 2%;
+}
+
+.container .fundo-img .img {
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+.container .informacao {
+  margin-top: 8%;
+}
+
+.container .informacao h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container .informacao .info-restricao {
+  display: flex;
+}
+
+.container .informacao .info-restricao #restricao-idade {
+  border: 1px solid #fff;
+  margin-right: 4px;
+  padding-right: 2px;
+  padding-top: 2px;
+}

@@ -1,0 +1,38 @@
+@media screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .container .informacao .descricao {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .container .fundo-img .img {
+    width: 70%;
+  }
+  .container .fundo-img {
+    display: flex;
+    justify-content: center;
+  }
+  .container .informacao .info-restricao {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    display: block;
+  }
+  .container .fundo-img .img {
+    width: 60%;
+  }
+  .container .fundo-img {
+    display: flex;
+    justify-content: center;
+  }
+}
